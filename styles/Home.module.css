@@ -1,9 +1,11 @@
-/** Headers **/
+/** || Headers **/
+
 #headerContainer {
   padding-left: 3.25rem;
   font-weight: 900;
 
   color: var(--color-black);
+  white-space: nowrap;
 }
 
 #header {
@@ -28,6 +30,72 @@
   font-size: 1.5rem;
   display: inline-block;
 }
+
+@media only screen and (max-width: 600px) {
+  #headerContainer {
+    transform: scale(0.75);
+    margin-top: -100px;
+  }
+}
+
+
+/** || Navigator **/
+
+#navigator {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  color: var(--color-white);
+  margin-left: 125px;
+  margin-bottom: 50px;
+}
+
+.navItem {
+  display: inline-flex;
+  flex-direction: row;
+  flex-grow: 1;
+  max-width: 250px;
+  height: 100px;
+  justify-content: left;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  flex: 1 1 0;
+  margin: 3px;
+  color: var(--color-black);
+  transition: color 0.1s linear;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.navItem:before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  z-index: -1;
+  transition: none;
+}
+
+.navItem:hover {
+  color: var(--color-red);
+}
+.navItem:hover:before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-red);
+  border-radius: 1rem;
+  margin-right: 0.25rem;
+  transition: background-color 0.15s ease-in;
+  z-index: 1;
+}
+
+/** || Main **/
 
 .main {
   display: flex;
