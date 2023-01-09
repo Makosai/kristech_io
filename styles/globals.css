@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
 :root {
+  color-scheme: light dark;
+
   --color-red: #fd5a56;
   --color-black: #1c1b20;
   --color-white: #f8f8f8;
   --color-pink-gray: #fdbcba;
+
+  --color-not-so-black: #1a1d24;
+  --color-not-so-white: #ebebed;
 
   --max-width: 1100px;
   --border-radius: 12px;
@@ -116,8 +129,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
-
-#background {
-  background-color: red;
 }

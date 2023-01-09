@@ -11,7 +11,7 @@ export default function Home() {
           <div id={styles.headerDot}>.</div>
           <div id={styles.headerIO}>io</div>
         </div>
-        <div id={styles.navigator}>
+        <div id={styles.navigator} className="dark">
           <div className={styles.navItem}>About me</div>
           <div className={styles.navItem}>Portfolio</div>
           <div className={styles.navItem}>Blog</div>

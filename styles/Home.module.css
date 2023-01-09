@@ -1,10 +1,57 @@
+@media (prefers-color-scheme: dark) {
+  #headerContainer {
+    color: var(--color-not-so-white);
+  }
+
+  .navItem:before {
+    background-color: var(--color-not-so-black);
+  }
+
+  .navItem {
+    color: var(--color-not-so-white);
+  }
+
+  .main {
+    background: linear-gradient(
+      to right,
+      var(--color-red) 0%,
+      var(--color-red) 40%,
+      var(--color-not-so-black) 40%,
+      var(--color-not-so-black) 100%
+    );
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #headerContainer {
+    color: var(--color-black);
+  }
+
+  .navItem:before {
+    background-color: var(--color-white);
+  }
+
+  .navItem {
+    color: var(--color-black);
+  }
+
+  .main {
+    background: linear-gradient(
+      to right,
+      var(--color-red) 0%,
+      var(--color-red) 40%,
+      var(--color-white) 40%,
+      var(--color-white) 100%
+    );
+  }
+}
+
 /** || Headers **/
 
 #headerContainer {
-  padding-left: 3.25rem;
+  margin-left: 40%;
   font-weight: 900;
 
-  color: var(--color-black);
   white-space: nowrap;
 }
 
@@ -38,7 +85,6 @@
   }
 }
 
-
 /** || Navigator **/
 
 #navigator {
@@ -49,7 +95,7 @@
   flex-direction: column;
   bottom: 0;
   color: var(--color-white);
-  margin-left: 125px;
+  left: calc(40% + 8px);
   margin-bottom: 50px;
 }
 
@@ -65,18 +111,16 @@
   font-weight: 700;
   flex: 1 1 0;
   margin: 3px;
-  color: var(--color-black);
   transition: color 0.1s linear;
   cursor: pointer;
   font-size: 1.1rem;
 }
 
 .navItem:before {
-  content: "";
+  content: '';
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 1rem;
-  background-color: var(--color-white);
   z-index: -1;
   transition: none;
 }
@@ -85,7 +129,7 @@
   color: var(--color-red);
 }
 .navItem:hover:before {
-  content: "";
+  content: '';
   width: 0.5rem;
   height: 0.5rem;
   background-color: var(--color-red);
@@ -101,17 +145,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   padding: 6rem;
   min-height: 100vh;
-
-  background: linear-gradient(
-    to right,
-    var(--color-red) 0%,
-    var(--color-red) 50%,
-    var(--color-white) 50%,
-    var(--color-white) 100%
-  );
 }
 
 .description {
