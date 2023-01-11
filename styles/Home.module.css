@@ -1,3 +1,4 @@
+/* #region Colors */
 @media (prefers-color-scheme: dark) {
   #headerContainer {
     color: var(--color-not-so-white);
@@ -15,7 +16,7 @@
     fill: var(--color-not-so-white);
   }
 
-  .main {
+  .background {
     background: linear-gradient(
       to right,
       var(--color-red) 0%,
@@ -43,14 +44,20 @@
     fill: var(--color-black);
   }
 
-  .main {
-    background: linear-gradient(
+  .background {
+    /* background: linear-gradient(
       to right,
       var(--color-red) 0%,
       var(--color-red) 40%,
       var(--color-white) 40%,
       var(--color-white) 100%
-    );
+    ); */
+
+    background: var(--color-red);
+  }
+
+  .background_dot {
+    background: var(--color-white);
   }
 }
 
@@ -61,9 +68,9 @@
 
   transition: fill 0.1s linear;
 }
+/* #endregion */
 
-/** || Headers **/
-
+/* #region Headers */
 #headerContainer {
   margin-left: calc(40% + 15px);
   font-weight: 900;
@@ -95,7 +102,9 @@
   font-size: 1.5rem;
   display: inline-block;
 }
+/* #endregion */
 
+/* #region Screen Sizes */
 @media only screen and (max-width: 760px) {
   #headerContainer {
     transform: scale(0.85);
@@ -109,7 +118,6 @@
     transform: scale(0.55);
     margin-left: calc(40% * 0.55 + 15px);
     margin-top: -100px;
-
   }
 }
 
@@ -121,9 +129,9 @@
     position: absolute;
   }
 }
+/* #endregion */
 
-/** || Navigator **/
-
+/* #region Navigator */
 #navigator {
   display: flex;
   justify-content: center;
@@ -175,15 +183,95 @@
   transition: background-color 0.15s ease-in;
   z-index: 1;
 }
+/* #endregion */
 
-/** || Main **/
-
-.main {
+/* #region Background */
+.background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
+  align-items: center;
+}
+
+.background_dot {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  animation-name: backgroundDotAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+/* #endregion */
+
+/* #region Animation */
+@keyframes backgroundDotAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(5);
+  }
+  70% {
+    transform: scale(0);
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  75.01% {
+    transform: scale(0);
+    margin-right: 0;
+    width: 0px;
+    height: 100vh;
+    border-radius: 0;
+  }
+  75.02% {
+    transform: scale(1);
+    margin-right: 0;
+    width: 0px;
+    height: 100vh;
+    border-radius: 0;
+  }
+  100% {
+    transform: scale(1);
+    margin-right: 0;
+    width: 60%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@keyframes mainAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* #endregion */
+
+/* #region Main */
+.main {
+  opacity: 0;
+  display: flex; /* flex */
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  width: 100%;
   min-height: 100vh;
+  z-index: 2;
+  animation-name: mainAnim;
+  animation-duration: 0.16s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
 }
 
 .description {
@@ -455,4 +543,5 @@
     transform: rotate(0deg);
   }
 }
+/* #endregion */
 
