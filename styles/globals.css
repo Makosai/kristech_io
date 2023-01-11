@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-[data-theme="dark"], [data-theme="light"] {
+[data-theme="dark"] {
   --color-black: var(--color-not-so-white) !important;
   --color-white: var(--color-not-so-black) !important;
+}
+
+[data-theme="light"] {
+  --color-not-so-black: var(--color-white) !important;
+  --color-not-so-white: var(--color-black) !important;
 }
 
 :root {

@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <MainContainer>
-      <main className={styles.main} id={colorScheme}>
+      <main className={styles.main}>
         <div id={styles.headerContainer}>
           <div id={styles.header}>Kris</div>
           <div id={styles.headerInline}>Tech</div>

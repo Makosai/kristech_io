@@ -17,13 +17,11 @@
   }
 
   .background {
-    background: linear-gradient(
-      to right,
-      var(--color-red) 0%,
-      var(--color-red) 40%,
-      var(--color-not-so-black) 40%,
-      var(--color-not-so-black) 100%
-    );
+    background-color: var(--color-red);
+  }
+
+  .background_dot {
+    background-color: var(--color-not-so-black);
   }
 }
 
@@ -45,19 +43,11 @@
   }
 
   .background {
-    /* background: linear-gradient(
-      to right,
-      var(--color-red) 0%,
-      var(--color-red) 40%,
-      var(--color-white) 40%,
-      var(--color-white) 100%
-    ); */
-
-    background: var(--color-red);
+    background-color: var(--color-red);
   }
 
   .background_dot {
-    background: var(--color-white);
+    background-color: var(--color-white);
   }
 }
 
