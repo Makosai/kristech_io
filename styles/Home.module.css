@@ -216,7 +216,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(5);
+    transform: scale(4);
   }
   70% {
     transform: scale(0);
@@ -236,6 +236,13 @@
     transform: scale(1);
     margin-right: 0;
     width: 0px;
+    height: 100vh;
+    border-radius: 0;
+  }
+  80% {
+    transform: scale(1);
+    margin-right: 0;
+    width: 65%;
     height: 100vh;
     border-radius: 0;
   }
@@ -271,7 +278,7 @@
   animation-name: mainAnim;
   animation-duration: 0.16s;
   animation-fill-mode: forwards;
-  animation-delay: 1.4s;
+  animation-delay: 1.25s;
 }
 
 .description {
