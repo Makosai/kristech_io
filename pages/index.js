@@ -65,6 +65,7 @@ export default function Home() {
           }
         />
       </main>
+      
     </MainContainer>
   );
 }
