@@ -10,6 +10,17 @@
   --color-not-so-white: var(--color-black) !important;
 }
 
+#__next {
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+}
+
+.done div main {
+  opacity: 1;
+  animation: unset;
+}
+
 :root {
   color-scheme: light dark;
 
@@ -20,6 +31,8 @@
 
   --color-not-so-black: #1a1d24;
   --color-not-so-white: #ebebed;
+  
+  --color-not-so-gray: #aaaaaa30;
 
   --max-width: 1100px;
   --border-radius: 12px;

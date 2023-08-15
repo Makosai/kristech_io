@@ -1,0 +1,18 @@
+.sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sections .section {
+  height: 50px;
+  font-weight: bold;
+}
+
+sectiondiv {
+  width: 1px;
+  height: 20px;
+  content: "";
+  border-left: 1px solid var(--color-not-so-gray);
+}

@@ -11,18 +11,6 @@
   .navItem {
     color: var(--color-not-so-white);
   }
-
-  .colorScheme {
-    fill: var(--color-not-so-white);
-  }
-
-  .background {
-    background-color: var(--color-red);
-  }
-
-  .background_dot {
-    background-color: var(--color-not-so-black);
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,28 +25,6 @@
   .navItem {
     color: var(--color-black);
   }
-
-  .colorScheme {
-    fill: var(--color-black);
-  }
-
-  .background {
-    background-color: var(--color-red);
-  }
-
-  .background_dot {
-    background-color: var(--color-white);
-  }
-}
-
-.colorScheme {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  
-  cursor: pointer;
-
-  transition: fill 0.1s linear;
 }
 /* #endregion */
 
@@ -66,6 +32,7 @@
 #headerContainer {
   margin-left: calc(40% + 15px);
   font-weight: 900;
+  z-index: 2;
 
   white-space: nowrap;
 
@@ -179,77 +146,7 @@
 }
 /* #endregion */
 
-/* #region Background */
-.background {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-.background_dot {
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  left: 0;
-  right: 0;
-  animation-name: backgroundDotAnim;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  transition: background-color 0.25s ease;
-}
-/* #endregion */
-
 /* #region Animation */
-@keyframes backgroundDotAnim {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(4);
-  }
-  70% {
-    transform: scale(0);
-    margin-right: auto;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-  }
-  75.01% {
-    transform: scale(0);
-    margin-right: 0;
-    width: 0px;
-    height: 100vh;
-    border-radius: 0;
-  }
-  75.02% {
-    transform: scale(1);
-    margin-right: 0;
-    width: 0px;
-    height: 100vh;
-    border-radius: 0;
-  }
-  80% {
-    transform: scale(1);
-    margin-right: 0;
-    width: 65%;
-    height: 100vh;
-    border-radius: 0;
-  }
-  100% {
-    transform: scale(1);
-    margin-right: 0;
-    width: 60%;
-    height: 100vh;
-    border-radius: 0;
-  }
-}
-
 @keyframes mainAnim {
   from {
     opacity: 0;
@@ -268,7 +165,7 @@
   justify-content: center;
   align-items: left;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   z-index: 2;
   animation-name: mainAnim;
   animation-duration: 0.16s;

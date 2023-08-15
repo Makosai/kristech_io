@@ -1,0 +1,23 @@
+.lightSwitch {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  
+  cursor: pointer;
+
+  transition: fill 0.1s linear;
+}
+
+/* #region Colors */
+@media (prefers-color-scheme: dark) {
+  .lightSwitch {
+    fill: var(--color-not-so-white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .lightSwitch {
+    fill: var(--color-black);
+  }
+}
+/* #endregion */
