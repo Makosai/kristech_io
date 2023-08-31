@@ -1,0 +1,15 @@
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  left: 20px;
+}
+
+.navButton {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navHome {
+  display: inline-block;
+}

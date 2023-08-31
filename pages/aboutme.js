@@ -7,6 +7,7 @@ import ImageBubble from '../components/image_bubble';
 import { Card, CardContent, Typography } from '@mui/material';
 import ArtstationIcon from '../components/icons/artstation_icon';
 import { GitHub, Instagram, LinkedIn, YouTube } from '@mui/icons-material';
+import Navbar from '../components/navbar';
 
 export default function AboutMe() {
   return (
@@ -193,6 +194,7 @@ export default function AboutMe() {
           Test
           <br />
         </div>
+        <Navbar />
         <ColorScheme />
       </main>
     </>
