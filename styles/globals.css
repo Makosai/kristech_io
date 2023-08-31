@@ -16,8 +16,8 @@
   width: 100%;
 }
 
-.done div main {
-  opacity: 1;
+.done + div main {
+  opacity: 1 !important;
   animation: unset;
 }
 

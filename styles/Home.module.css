@@ -37,6 +37,8 @@
   white-space: nowrap;
 
   transition: color 0.1s linear;
+
+  pointer-events: none;
 }
 
 #header {
