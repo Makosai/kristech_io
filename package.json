@@ -11,19 +11,18 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.7",
-    "@mui/material": "^5.14.7",
-    "@next/font": "13.4.19",
-    "@nextui-org/navbar": "^2.0.16",
-    "@nextui-org/react": "^2.1.7",
-    "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
-    "framer-motion": "^10.16.2",
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "@nextui-org/navbar": "^2.0.27",
+    "@nextui-org/react": "^2.2.9",
+    "eslint": "8.55.0",
+    "eslint-config-next": "^14.0.3",
+    "framer-motion": "^10.16.14",
+    "next": "^14.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^2.0.2"
