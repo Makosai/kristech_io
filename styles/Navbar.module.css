@@ -5,6 +5,10 @@
   left: 20px;
 }
 
+#navMenu {
+  display: initial;
+}
+
 .navButton {
   display: inline-block;
   margin-right: 10px;
@@ -12,4 +16,14 @@
 
 .navHome {
   display: inline-block;
+  font-weight: 700;
+}
+
+.navHome div {
+  display: inline-block;
+  color: var(--color-black);
+}
+
+.navHome div + div {
+  color: var(--color-white);
 }

@@ -1,3 +1,13 @@
+/**
+TODO:
+1. Light-dark button does not seem to keep the state required when changing pages. It works on home but not on about.
+It has to be clicked multiple times.
+
+2. Scrollable page.
+3. When 400px of the page is scrolled (the height of the red area), then activate the nav bar.
+
+**/
+
 #modal {
   width: 100%;
   min-height: 100%;

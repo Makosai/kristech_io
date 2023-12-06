@@ -1,20 +1,15 @@
 import Image from 'next/image';
-import styles from '../styles/AboutMe.module.css';
-import ColorScheme from '../components/color_scheme';
-import PageOrientation, { Orientation } from '../components/page_orientation';
-import BackgroundHandler from '../components/background_handler';
-import ImageBubble from '../components/image_bubble';
+import styles from '../../styles/AboutMe.module.css';
+import ColorScheme from '../color_scheme';
+import ImageBubble from '../image_bubble';
 import { Card, CardContent, Typography } from '@mui/material';
-import ArtstationIcon from '../components/icons/artstation_icon';
+import ArtstationIcon from '../icons/artstation_icon';
 import { GitHub, Instagram, LinkedIn, YouTube } from '@mui/icons-material';
-import Navbar from '../components/navbar';
+import Navbar from '../navbar';
 
-export default function AboutMe() {
+export default function SectionAboutMe() {
   return (
     <>
-      <Navbar />
-      <BackgroundHandler />
-      <PageOrientation orientation={Orientation.Vertical} />
       <main className={styles.main}>
         <div className={styles.top}>
           <div className={styles.profile}>
