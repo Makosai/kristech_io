@@ -226,7 +226,7 @@
 		position: absolute;
 		color: var(--color-white);
 		font-weight: lighter;
-		z-index: 1;
+		z-index: 20;
 		left: 12px;
 		bottom: 24px;
 	}

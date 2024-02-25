@@ -24,6 +24,16 @@
 		transition: background-color 0.25s ease;
 	}
 
+	@media (max-width: 767px) {
+		#switch-container {
+			background-color: var(--color-red);
+		}
+
+		#light-switch {
+			@apply !fill-[--color-black];
+		}
+	}
+
 	#light-switch {
 		@apply fill-[--color-black];
 

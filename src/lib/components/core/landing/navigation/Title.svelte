@@ -1,13 +1,13 @@
 <div id="title">
 	<div>
 		<div class="block">
-			<div class="text-[10rem]">kris</div>
+			<div class="text-9xl">kris</div>
 		</div>
 		<br />
 		<div class="block">
-			<div class="text-[10rem]">tech</div>
-			<div class="text-[9rem] text-[var(--color-red)]">.</div>
-			<div class="lowercase text-[1.5rem]">io</div>
+			<div class="text-9xl">tech</div>
+			<div class="text-8xl text-[var(--color-red)]">.</div>
+			<div class="lowercase text-3xl">io</div>
 		</div>
 	</div>
 </div>

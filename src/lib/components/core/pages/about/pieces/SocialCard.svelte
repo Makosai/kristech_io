@@ -22,9 +22,9 @@
 
 <div class="social-card">
 	{#each socials as { Icon, title, href }}
-		<a {href} aria-label={title}
-			><Icon color={'var(--color-black)'} width={'1.5rem'} height={'1.5rem'} {title} /></a
-		>
+		<a {href} aria-label={title}>
+			<Icon color={'var(--color-black)'} width={'1.5rem'} height={'1.5rem'} {title} />
+		</a>
 	{/each}
 </div>
 

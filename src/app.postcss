@@ -12,10 +12,25 @@ body {
 
   font-family: 'Poppins', sans-serif;
 }
+
+.section-container {
+  @apply m-10;
+}
+
+h2 {
+  @apply text-4xl font-bold;
+}
+
 a {
+  color: teal;
+  text-decoration: underline;
+}
+
+.un-a {
   color: inherit;
   text-decoration: none;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -25,12 +40,15 @@ a {
 
 [data-theme-mode="dark"] {
   --color-black: var(--color-not-so-white) !important;
+  --color-black-50: var(--color-not-so-black-50) !important;
+  --color-black-75: var(--color-not-so-black-75) !important;
   --color-white: var(--color-not-so-black) !important;
   --color-dither: var(--color-not-so-dither) !important;
 }
 
 [data-theme-mode="light"] {
   --color-not-so-black: var(--color-white) !important;
+  --color-not-so-black-50: var(--color-white-50) !important;
   --color-not-so-white: var(--color-black) !important;
   --color-not-so-dither: var(--color-dither) !important;
 }
@@ -51,11 +69,15 @@ a {
 
   --color-red: #fd5a56;
   --color-black: #1c1b20; /* #1c1b20 28, 27, 32 */
+  --color-black-50: #1c1b200d;
+  --color-black-75: #1c1b205f;
   --color-white: #f8f8f8; /* #f8f8f8 248, 248, 248 */
   --color-dither: 28, 27, 32;
   --color-pink-gray: #fdbcba;
 
   --color-not-so-black: #1a1d24; /* #1a1d24 26, 29, 36 */
+  --color-not-so-black-50: #f8f8f80d;
+  --color-not-so-black-75: #f8f8f85f;
   --color-not-so-white: #ebebed; /* #ebebed 235, 235, 237 */
   --color-not-so-dither: 112, 108, 148;
   

@@ -30,7 +30,7 @@
 	<ul>
 		{#each sections as section}
 			<li class="nav-item">
-				<a href={section.url} on:click={handleAnchorClick}>{section.name}</a>
+				<a class="un-a" href={section.url} on:click={handleAnchorClick}>{section.name}</a>
 			</li>
 		{/each}
 	</ul>

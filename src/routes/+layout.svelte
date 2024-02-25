@@ -28,11 +28,13 @@
 	// Components
 	import Landing from '$lib/components/core/landing/Landing.svelte';
 	import Loader from '$lib/components/core/loader/Loader.svelte';
-	
-	
+	import Background from '$lib/components/other/Background.svelte';
+
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<Loader />
-<Landing />
-<slot />
+<Background>
+	<Loader />
+	<Landing />
+	<slot />
+</Background>

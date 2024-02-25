@@ -4,7 +4,7 @@
 </script>
 
 <Fader>
-	<div class="bg-[--color-white]">
+	<div class="bg-transparent">
 		<AboutMe />
 	</div>
 </Fader>
