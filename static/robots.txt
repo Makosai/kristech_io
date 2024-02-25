@@ -1,0 +1,5 @@
+# robots.txt Kris welcomes you, robots
+User-agent: *
+Disallow: 
+Disallow: /admin/
+Sitemap: https://kristech.io/sitemap.xml

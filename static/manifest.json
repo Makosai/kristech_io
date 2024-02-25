@@ -1,0 +1,14 @@
+{
+  "short_name": "kristech.io",
+  "name": "kristech.io | Ambition is scarce. But not here.",
+  "icons": [],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#284267",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#284267",
+  "shortcuts": [],
+  "description": "The website for Kristopher Ali. A software engineer and 3D artist.",
+  "screenshots": []
+}

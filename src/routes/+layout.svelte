@@ -19,7 +19,20 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+
+	// Fonts
+	import '@fontsource/poppins/400.css';
+	import '@fontsource/poppins/700.css';
+	import '@fontsource/roboto/900.css';
+
+	// Components
+	import Landing from '$lib/components/core/landing/Landing.svelte';
+	import Loader from '$lib/components/core/loader/Loader.svelte';
+	
+	
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+<Loader />
+<Landing />
 <slot />
