@@ -6,15 +6,21 @@
 	import Fader from '../pages/Fader.svelte';
 </script>
 
-<div id="landing">
-	<Spacer>
-		<LightSwitch />
-	</Spacer>
-	<Title />
-	<Navigation />
+<div id="landing-bg">
+	<div id="landing">
+		<Spacer>
+			<LightSwitch />
+		</Spacer>
+		<Title />
+		<Navigation />
+	</div>
 </div>
 
 <style>
+	#landing-bg {
+		@apply bg-[--color-red] w-full min-h-full;
+	}
+
 	#landing {
 		@apply min-h-full ml-auto w-full md:w-[60%] flex flex-col pl-4 pb-4 gap-4 bg-[--color-white];
 
