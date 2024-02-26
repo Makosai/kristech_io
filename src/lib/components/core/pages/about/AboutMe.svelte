@@ -18,6 +18,8 @@
 		</div>
 	</PhotoBanner>
 	<div class="me section-container">
+    <div class="h1">• <h1>About Me</h1> •</div>
+
 		<h2>Experiences</h2>
 
 		<GridContainer>
@@ -187,6 +189,10 @@
 	.content {
 		@apply relative z-10;
 	}
+
+  h1 {
+    @apply mb-4 mt-4 text-[--color-black] text-center;
+  }
 
 	h2 {
 		@apply mb-6 mt-4 text-[--color-black];
