@@ -159,7 +159,7 @@
 			<Card>
 				<svelte:fragment slot="header">Reia & Sustenet</svelte:fragment>
 				<p>
-					For 2024, I'll be primarily working on <a href="https://playreia.com">Reia</a> an action adventure MMO that uses Godot's GDScript
+					For 2024, I'll be primarily working on <a href="https://www.playreia.com">Reia</a> an action adventure MMO that uses Godot's GDScript
 					and Rust. On the side I'll be working on <a href="https://github.com/Quaint-Studios/Sustenet">Sustenet</a> that I'll reprogram from
 					C# to C++ to be used with Reia.
 				</p>
