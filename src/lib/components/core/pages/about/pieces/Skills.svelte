@@ -1,7 +1,7 @@
 <script>
 	// Backend
 	import C_Sharp from '$lib/assets/logos/c-sharp.svg';
-	// import Rust from '$lib/assets/logos/rust.svg';
+	import Rust from '$lib/assets/logos/rust.png';
 	import CPP from '$lib/assets/logos/cpp.svg';
 	import C from '$lib/assets/logos/c.svg';
 	// import GDScript from '$lib/assets/logos/godot.svg';
@@ -56,13 +56,13 @@
 	// import Docker from '$lib/assets/logos/docker.svg';
 	import Firebase from '$lib/assets/logos/firebase.svg';
 	import WordPress from '$lib/assets/logos/wordpress.png';
-	
+
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 
 	$: preloadedImages = [
 		// Backend
 		C_Sharp,
-		// Rust
+		Rust,
 		CPP,
 		C,
 		// GDScript,
@@ -145,11 +145,14 @@
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div data-section="backend" class="section">
-				<h3>Backend</h3>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={C_Sharp} alt="C#" width="48" height="48" />
 						<p>C#</p>
+					</div>
+					<div class="skill">
+						<img src={Rust} alt="Rust" width="44" height="44" class="invert-img" />
+						<p>Rust</p>
 					</div>
 					<div class="skill">
 						<img src={CPP} alt="C++" width="48" height="48" />
@@ -168,7 +171,7 @@
 						<p>Java</p>
 					</div>
 					<div class="skill">
-						<img src={Python} alt="Python" width="64" height="48" />
+						<img src={Python} alt="Python" width="72" height="72" />
 						<p>Python</p>
 					</div>
 					<div class="skill">
@@ -183,7 +186,6 @@
 			</div>
 		{:else if tabSet === 1}
 			<div data-section="frontend" class="section">
-				<h3>Frontend</h3>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={React} alt="React" width="48" height="48" />
@@ -213,7 +215,6 @@
 			</div>
 		{:else if tabSet === 2}
 			<div data-section="javascript" class="section">
-				<h3>JavaScript</h3>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={JavaScript} alt="JavaScript" width="48" height="48" />
@@ -256,7 +257,6 @@
 			</div>
 		{:else if tabSet === 4}
 			<div data-section="build-tools" class="section">
-				<h3>Build Tools</h3>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={Webpack} alt="Webpack" width="48" height="48" />
@@ -278,7 +278,6 @@
 			</div>
 		{:else if tabSet === 5}
 			<div data-section="artwork" class="section">
-				<h3>Artwork</h3>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={Blender3D} alt="Blender3D" width="48" height="48" />
@@ -296,7 +295,6 @@
 			</div>
 		{:else if tabSet === 6}
 			<div data-section="other" class="section">
-				<h3>Other</h3>
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={Unity} alt="Unity" width="64" height="64" class="brighter-img" />
@@ -307,7 +305,7 @@
 						<p>Firebase</p>
 					</div>
 					<div class="skill">
-						<img src={WordPress} alt="WordPress" width="52" height="52" class="brighter-img" />
+						<img src={WordPress} alt="WordPress" width="52" height="52" class="invert-img" />
 						<p>WordPress</p>
 					</div>
 				</div>
@@ -325,6 +323,10 @@
 		--tw-brightness: brightness(100);
 		filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
 			var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+	}
+
+	:global(html[data-theme-mode='dark']) .invert-img {
+		@apply invert;
 	}
 
 	.skill {
