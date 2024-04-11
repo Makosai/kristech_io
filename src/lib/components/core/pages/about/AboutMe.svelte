@@ -7,6 +7,7 @@
 	import Slogan from './pieces/Slogan.svelte';
 	import GridContainer from '$lib/components/other/GridContainer.svelte';
 	import Card from '$lib/components/other/Card.svelte';
+	import Skills from './pieces/Skills.svelte';
 </script>
 
 <div id="about" class="section about-me text-[--color-white] bg-transparent">
@@ -19,6 +20,10 @@
 	</PhotoBanner>
 	<div class="me section-container">
     <div class="h1">• <h1>About Me</h1> •</div>
+
+		<h2>Skills</h2>
+		<Skills />
+		
 
 		<h2>Experiences</h2>
 
