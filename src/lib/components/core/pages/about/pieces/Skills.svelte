@@ -58,75 +58,81 @@
 	import WordPress from '$lib/assets/logos/wordpress.svg';
 </script>
 
-<div class="rounded-full bg-[--color-white]">
-	<div data-section="frontend" class="section">
-		<h3>Frontend</h3>
-		<div class="grid grid-cols-3 gap-4">
-			<img src={React} alt="React" width="32" height="32" />
-			<img src={HTML5} alt="HTML5" width="32" height="32" />
-			<img src={CSS3} alt="CSS3" width="32" height="32" />
-			<img src={SASS} alt="SASS" width="32" height="32" />
-			<img src={Bootstrap} alt="Bootstrap" width="32" height="32" />
-			<img src={MaterialUI} alt="MaterialUI" width="32" height="32" />
-		</div>
-	</div>
+<div>
 	<div data-section="backend" class="section">
 		<h3>Backend</h3>
 		<div class="grid grid-cols-3 gap-4">
-			<img src={C_Sharp} alt="C#" width="32" height="32" />
-			<img src={CPP} alt="C++" width="32" height="32" />
-			<img src={C} alt="C" width="32" height="32" />
-			<img src={Go} alt="Go" width="32" height="32" />
-			<img src={Java} alt="Java" width="32" height="32" />
-			<img src={Python} alt="Python" width="32" height="32" />
-			<img src={PHP} alt="PHP" width="32" height="32" />
-			<img src={COBOL} alt="COBOL" width="32" height="32" />
+			<div class="skill"><img src={C_Sharp} alt="C#" width="48" height="48" /></div>
+			<div class="skill"><img src={CPP} alt="C++" width="48" height="48" /></div>
+			<div class="skill"><img src={C} alt="C" width="48" height="48" /></div>
+			<div class="skill"><img src={Go} alt="Go" width="64" height="48" /></div>
+			<div class="skill"><img src={Java} alt="Java" width="64" height="48" /></div>
+			<div class="skill"><img src={Python} alt="Python" width="64" height="48" /></div>
+			<div class="skill"><img src={PHP} alt="PHP" width="64" height="48" /></div>
+			<div class="skill"><img src={COBOL} alt="COBOL" width="64" height="48" /></div>
+		</div>
+	</div>
+	<div data-section="frontend" class="section">
+		<h3>Frontend</h3>
+		<div class="grid grid-cols-3 gap-4">
+			<div class="skill">
+				<img src={React} alt="React" width="48" height="48" />
+				<p>React</p>
+			</div>
+			<div class="skill"><img src={HTML5} alt="HTML5" width="48" height="48" /></div>
+			<div class="skill"><img src={CSS3} alt="CSS3" width="48" height="48" /></div>
+			<div class="skill"><img src={SASS} alt="SASS" width="48" height="48" /></div>
+			<div class="skill"><img src={Bootstrap} alt="Bootstrap" width="48" height="48" /></div>
+			<div class="skill"><img src={MaterialUI} alt="MaterialUI" width="48" height="48" /></div>
 		</div>
 	</div>
 	<div data-section="javascript" class="section">
 		<h3>JavaScript</h3>
 		<div class="grid grid-cols-3 gap-4">
-			<img src={JavaScript} alt="JavaScript" width="32" height="32" />
-			<img src={TypeScript} alt="TypeScript" width="32" height="32" />
-			<img src={JQuery} alt="JQuery" width="32" height="32" />
-			<img src={NodeJS} alt="NodeJS" width="32" height="32" />
+			<div class="skill"><img src={JavaScript} alt="JavaScript" width="48" height="48" /></div>
+			<div class="skill"><img src={TypeScript} alt="TypeScript" width="48" height="48" /></div>
+			<div class="skill"><img src={JQuery} alt="JQuery" width="48" height="48" /></div>
+			<div class="skill"><img src={NodeJS} alt="NodeJS" width="48" height="48" /></div>
 		</div>
 	</div>
 	<div data-section="databases" class="section">
 		<h3>Databases</h3>
 		<div class="grid grid-cols-3 gap-4">
-			<img src={MySQL} alt="MySQL" width="32" height="32" />
-			<img src={MongoDB} alt="MongoDB" width="32" height="32" />
-			<img src={Firestore} alt="Firestore" width="32" height="32" />
-			<img src={FirebaseRDB} alt="FirebaseRDB" width="32" height="32" />
+			<div class="skill"><img src={MySQL} alt="MySQL" width="48" height="48" /></div>
+			<div class="skill"><img src={MongoDB} alt="MongoDB" width="48" height="48" /></div>
+			<div class="skill"><img src={Firestore} alt="Firestore" width="48" height="48" /></div>
+			<div class="skill"><img src={FirebaseRDB} alt="FirebaseRDB" width="48" height="48" /></div>
 		</div>
 	</div>
 	<div data-section="build-tools" class="section">
 		<h3>Build Tools</h3>
 		<div class="grid grid-cols-3 gap-4">
-			<img src={Webpack} alt="Webpack" width="32" height="32" />
-			<img src={Babel} alt="Babel" width="32" height="32" />
-			<img src={Jest} alt="Jest" width="32" height="32" />
-			<img src={NUnit} alt="NUnit" width="32" height="32" />
+			<div class="skill"><img src={Webpack} alt="Webpack" width="48" height="48" /></div>
+			<div class="skill"><img src={Babel} alt="Babel" width="48" height="48" /></div>
+			<div class="skill"><img src={Jest} alt="Jest" width="48" height="48" /></div>
+			<div class="skill"><img src={NUnit} alt="NUnit" width="48" height="48" /></div>
 		</div>
 	</div>
 	<div data-section="artwork" class="section">
 		<h3>Artwork</h3>
 		<div class="grid grid-cols-3 gap-4">
-			<img src={Blender3D} alt="Blender3D" width="32" height="32" />
-			<img src={Krita} alt="Krita" width="32" height="32" />
-			<img src={Substance} alt="Substance" width="32" height="32" />
+			<div class="skill"><img src={Blender3D} alt="Blender3D" width="48" height="48" /></div>
+			<div class="skill"><img src={Krita} alt="Krita" width="48" height="48" /></div>
+			<div class="skill"><img src={Substance} alt="Substance" width="48" height="48" /></div>
 		</div>
 	</div>
 	<div data-section="other" class="section">
 		<h3>Other</h3>
 		<div class="grid grid-cols-3 gap-4">
-			<img src={Unity} alt="Unity" width="32" height="32" />
-			<img src={Firebase} alt="Firebase" width="32" height="32" />
-			<img src={WordPress} alt="WordPress" width="32" height="32" />
+			<div class="skill"><img src={Unity} alt="Unity" width="48" height="48" /></div>
+			<div class="skill"><img src={Firebase} alt="Firebase" width="48" height="48" /></div>
+			<div class="skill"><img src={WordPress} alt="WordPress" width="48" height="48" /></div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.skill {
+		@apply rounded-full bg-[--color-white] h-24 w-24 flex flex-col text-[--color-black] font-semibold justify-center items-center border-4 border-[--color-black-50] shadow-lg;
+	}
 </style>
