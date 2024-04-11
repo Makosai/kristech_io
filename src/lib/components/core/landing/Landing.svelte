@@ -22,7 +22,7 @@
 	}
 
 	#landing {
-		@apply min-h-full ml-auto w-full md:w-[60%] flex flex-col pl-4 pb-4 gap-4 bg-[--color-white];
+		@apply min-h-full ml-auto w-full h-[100vh] md:w-[60%] flex flex-col pl-4 pb-4 gap-4 bg-[--color-white];
 
 		animation-name: landingAnim;
 		animation-duration: 1.5s;

@@ -32,8 +32,4 @@
 	.social-card {
 		@apply flex justify-between gap-2 p-4 bg-[--color-white] rounded-[4px];
 	}
-
-	.social-card * path {
-		@apply fill-[--color-black];
-	}
 </style>
