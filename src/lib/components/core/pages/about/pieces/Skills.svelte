@@ -15,11 +15,11 @@
 	import CPP from '$lib/assets/logos/cpp.svg';
 	import C from '$lib/assets/logos/c.svg';
 	// import GDScript from '$lib/assets/logos/godot.svg';
-	import Go from '$lib/assets/logos/go.svg';
+	import Go from '$lib/assets/logos/golang.svg';
 	import Java from '$lib/assets/logos/java.svg';
 	import Python from '$lib/assets/logos/python.svg';
 	import PHP from '$lib/assets/logos/php.svg';
-	import COBOL from '$lib/assets/logos/cobol.svg';
+	import COBOL from '$lib/assets/logos/cobol.png';
 
 	// JavaScript
 	import JavaScript from '$lib/assets/logos/javascript.svg';
