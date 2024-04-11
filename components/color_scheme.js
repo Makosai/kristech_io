@@ -1,6 +1,9 @@
+"use client"
+
 import LightSwitch from '../public/theme-light-dark.svg';
 import { useState, useEffect } from 'react';
 import styles from '../styles/ColorScheme.module.css';
+import Image from 'next/image';
 
 export default function ColorScheme() {
   const [colorScheme, setColorScheme] = useState(null);
@@ -40,7 +43,9 @@ export default function ColorScheme() {
   }, [colorScheme]);
 
   return (
-    <LightSwitch
+    <Image
+      priority
+      src={LightSwitch}
       alt="light/dark theme"
       width={30}
       height={30}

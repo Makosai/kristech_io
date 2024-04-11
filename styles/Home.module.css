@@ -4,9 +4,9 @@
     color: var(--color-not-so-white);
   }
 
-  .navItem:before {
-    background-color: var(--color-not-so-black);
-  }
+    .navItem:before {
+      background-color: var(--color-not-so-black);
+    }
 
   .navItem {
     color: var(--color-not-so-white);
@@ -135,17 +135,17 @@
 .navItem:hover {
   color: var(--color-red);
 }
-.navItem:hover:before {
-  content: '';
-  opacity: 1;
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: var(--color-red);
-  border-radius: 1rem;
-  margin-right: 0.25rem;
-  transition: background-color 0.15s ease-in;
-  z-index: 1;
-}
+  .navItem:hover:before {
+    content: '';
+    opacity: 1;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--color-red);
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+    transition: background-color 0.15s ease-in;
+    z-index: 1;
+  }
 /* #endregion */
 
 /* #region Animation */

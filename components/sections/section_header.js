@@ -5,7 +5,6 @@ import PageOrientation from "../page_orientation";
 export default function SectionHeader() {
   return (
     <>
-      <Navbar2 />
       <BackgroundHandler />
       <PageOrientation />
     </>
