@@ -12,7 +12,7 @@
 
 <script>
 	import { onMount } from 'svelte';
-	import { fade } from '$lib/utils/animation';
+	// import { fade } from '$lib/utils/animation';
 
 	let isFaded = false;
 	let isHovered = false;
@@ -37,8 +37,8 @@
 </script>
 
 <div
-	class="fixed top-0 left-0 w-full z-50 bg-[var(--color-white)] shadow-md"
-	style="transition: opacity 0.5s; opacity: {isFaded || isHovered ? 1 : 0}"
+	class="breadcrumb"
+	style="opacity: {isFaded || isHovered ? 1 : 0}"
 	on:mouseenter={handleMouseEnter}
 	on:mouseleave={handleMouseLeave}
 	aria-label="Breadcrumb"
@@ -57,17 +57,16 @@
 
 <style>
 	/* This is the navbar that fades in and out */
-	nav {
+	.breadcrumb {
 		@apply fixed top-0 left-0 w-full z-50 bg-[var(--color-white)] shadow-md;
 		transition: opacity 0.5s;
-		opacity: 0.5; /* TODO: Implement this */
 	}
 
-	nav a {
+	.breadcrumb a {
 		@apply text-lg font-bold;
 	}
 
-	nav a:hover {
+	.breadcrumb a:hover {
 		@apply text-[var(--color-red)];
 	}
 </style>
