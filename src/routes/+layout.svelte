@@ -30,6 +30,7 @@
 	import Landing from '$lib/components/core/landing/Landing.svelte';
 	import Loader from '$lib/components/core/loader/Loader.svelte';
 	import Background from '$lib/components/other/Background.svelte';
+	import Footer from '$lib/components/other/Footer.svelte';
 
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
@@ -38,4 +39,5 @@
 	<Loader />
 	<Landing />
 	<slot />
+	<Footer />
 </Background>
