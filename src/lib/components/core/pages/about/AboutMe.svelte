@@ -19,11 +19,13 @@
 		</div>
 	</PhotoBanner>
 	<div class="me section-container">
-    <div class="h1">• <h1>About Me</h1> •</div>
-
+		<div class="h1">
+			•
+			<h1>About Me</h1>
+			•
+		</div>
 		<h2>Skills</h2>
 		<Skills />
-		
 
 		<h2>Experiences</h2>
 
@@ -36,8 +38,8 @@
 					<span class="badge variant-filled">GDScript</span>
 					<span class="badge variant-filled">Rust</span>
 					<span class="badge variant-filled">C++</span>
-          <span class="badge variant-filled">C#</span>
-          <span class="badge variant-filled">Go</span>
+					<span class="badge variant-filled">C#</span>
+					<span class="badge variant-filled">Go</span>
 				</svelte:fragment>
 			</Card>
 			<Card>
@@ -64,7 +66,7 @@
 			</Card>
 			<Card>
 				<svelte:fragment slot="header">Tutor @ Georgia Tech</svelte:fragment>
-				<svelte:fragment slot="subheader">Trilogy <br /> Nov 2019 - Feb 2022</svelte:fragment>
+				<svelte:fragment slot="subheader">Trilogy <br /> Nov 2019 - Present</svelte:fragment>
 
 				<svelte:fragment slot="footer">
 					<span class="badge variant-filled">JavaScript</span>
@@ -153,8 +155,9 @@
 		<Card>
 			<svelte:fragment slot="header">New Goals</svelte:fragment>
 			<p>
-				Now my primary focus is improving my skills in languages such as C++, Rust, and GoLang. While I have several years of experience in
-				languages like C#, PHP, and various web frameworks, my experience with C++, Rust, and Go are limited.
+				Now my primary focus is improving my skills in languages such as C++, Rust, and GoLang by working on some interesting projects.
+				Currently I'm working on VISP for Rust, Nyxy for C++, and Reia for Rust & GDScript. I'm also working on a few other projects. I'm
+				excited to see where these projects take me and what I can learn from them.
 			</p>
 		</Card>
 
@@ -164,9 +167,9 @@
 			<Card>
 				<svelte:fragment slot="header">Reia & Sustenet</svelte:fragment>
 				<p>
-					For 2024, I'll be primarily working on <a href="https://www.playreia.com">Reia</a> an action adventure MMO that uses Godot's GDScript
-					and Rust. On the side I'll be working on <a href="https://github.com/Quaint-Studios/Sustenet">Sustenet</a> that I'll reprogram from
-					C# to C++ to be used with Reia.
+					For 2024, I'll be primarily working on <a href="https://www.playreia.com">Reia</a> an action adventure MMO that uses Godot's
+					GDScript and Rust. The website is made using SvelteKit. On the side I'll be working on
+					<a href="https://github.com/Quaint-Studios/Sustenet">Sustenet</a> that I'll reprogram from C# to C++ to be used with Reia.
 				</p>
 			</Card>
 
@@ -182,8 +185,8 @@
 			<Card>
 				<svelte:fragment slot="header">Nyxy</svelte:fragment>
 				<p>
-					<a href="https://github.com/Makosai/Nyxy">Nyxy</a>, a Game Engine built with C++ as well as a small Simulation game in it as well.
-					All of these are to improve my skills in various areas, including art and collaboration.
+					<a href="https://github.com/Makosai/Nyxy">Nyxy</a>, a Game Engine built with C++ and includes a small Simulation game in it. All
+					of these are to improve my skills in various areas such as: art, design, complex systems, programming, and marketing.
 				</p>
 			</Card>
 		</GridContainer>
@@ -195,9 +198,9 @@
 		@apply relative z-10;
 	}
 
-  h1 {
-    @apply mb-4 mt-4 text-[--color-black] text-center;
-  }
+	h1 {
+		@apply mb-4 mt-4 text-[--color-black] text-center;
+	}
 
 	h2 {
 		@apply mb-6 mt-4 text-[--color-black];
