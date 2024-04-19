@@ -6,26 +6,29 @@
 	import C from '$lib/assets/logos/c.svg';
 	import GDScript from '$lib/assets/logos/godot.svg';
 	import Go from '$lib/assets/logos/golang.svg';
+	import Dart from '$lib/assets/logos/dart.svg';
 	import Java from '$lib/assets/logos/java.svg';
 	import Python from '$lib/assets/logos/python.svg';
 	import PHP from '$lib/assets/logos/php.svg';
 	import COBOL from '$lib/assets/logos/cobol.png';
 
-	// Frontend
+	// Frameworks
 	import React from '$lib/assets/logos/react.svg';
 	import Svelte from '$lib/assets/logos/svelte.svg';
+	import NextJS from '$lib/assets/logos/nextjs.svg';
+	import Flutter from '$lib/assets/logos/flutter.svg';
+
+	// Frontend
+	import JavaScript from '$lib/assets/logos/javascript.svg';
+	import TypeScript from '$lib/assets/logos/typescript.svg';
+	import NodeJS from '$lib/assets/logos/nodejs.svg';
+	import JQuery from '$lib/assets/logos/jquery.png';
 	import HTML5 from '$lib/assets/logos/html5.svg';
 	import TailwindCSS from '$lib/assets/logos/tailwindcss.svg';
 	import CSS3 from '$lib/assets/logos/css3.svg';
 	import SASS from '$lib/assets/logos/sass.svg';
 	import Bootstrap from '$lib/assets/logos/bootstrap.svg';
 	import MaterialUI from '$lib/assets/logos/material-ui.svg';
-
-	// JavaScript
-	import JavaScript from '$lib/assets/logos/javascript.svg';
-	import TypeScript from '$lib/assets/logos/typescript.svg';
-	import JQuery from '$lib/assets/logos/jquery.png';
-	import NodeJS from '$lib/assets/logos/nodejs.svg';
 
 	// Databases
 	import MySQL from '$lib/assets/logos/mysql.svg';
@@ -41,12 +44,13 @@
 	import Jest from '$lib/assets/logos/jest.svg';
 	import NUnit from '$lib/assets/logos/nunit.svg';
 
-	// Artwork
+	// Art & Design
 	import Blender3D from '$lib/assets/logos/blender3d.svg';
 	import Krita from '$lib/assets/logos/krita.png';
 	import Substance from '$lib/assets/logos/substance.svg';
 	import ArmorPaint from '$lib/assets/logos/armorpaint.png';
 	import QuixelMixer from '$lib/assets/logos/quixelmixer.png';
+	import Figma from '$lib/assets/logos/figma.svg';
 
 	// Other
 	import Godot from '$lib/assets/logos/godot.svg';
@@ -55,6 +59,7 @@
 	import Git from '$lib/assets/logos/git.png';
 	import Docker from '$lib/assets/logos/docker.svg';
 	import Firebase from '$lib/assets/logos/firebase.svg';
+	import Shopify from '$lib/assets/logos/shopify.svg';
 	import WordPress from '$lib/assets/logos/wordpress.png';
 
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
@@ -67,25 +72,28 @@
 		C,
 		GDScript,
 		Go,
+		Dart,
 		Java,
 		Python,
 		COBOL,
 
-		// Frontend
+		// Frameworks
 		React,
 		Svelte,
+		NextJS,
+		Flutter,
+
+		// Frontend
+		JavaScript,
+		TypeScript,
+		NodeJS,
+		JQuery,
 		HTML5,
 		TailwindCSS,
 		CSS3,
 		SASS,
 		Bootstrap,
 		MaterialUI,
-
-		// JavaScript
-		JavaScript,
-		TypeScript,
-		JQuery,
-		NodeJS,
 
 		// Databases
 		MySQL,
@@ -107,6 +115,7 @@
 		Substance,
 		ArmorPaint,
 		QuixelMixer,
+		Figma,
 
 		// Other
 		Godot, // The same as GDScript but let's add it here for now
@@ -115,6 +124,7 @@
 		Git,
 		Docker,
 		Firebase,
+		Shopify,
 		WordPress
 	];
 
@@ -135,8 +145,8 @@
 	justify="center"
 >
 	<Tab bind:group={tabSet} name="backend" value={0}>Backend</Tab>
-	<Tab bind:group={tabSet} name="frontend" value={1}>Frontend</Tab>
-	<Tab bind:group={tabSet} name="javascript" value={2}>JavaScript</Tab>
+	<Tab bind:group={tabSet} name="framework" value={1}>Frameworks</Tab>
+	<Tab bind:group={tabSet} name="frontend" value="{2}">Frontend</Tab>
 	<Tab bind:group={tabSet} name="databases" value={3}>Databases</Tab>
 	<Tab bind:group={tabSet} name="build-tools" value={4}>Build Tools</Tab>
 	<Tab bind:group={tabSet} name="artwork" value={5}>Artwork</Tab>
@@ -144,7 +154,7 @@
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div data-section="backend" class="section">
-				<div class="grid grid-cols-3 gap-4">
+				<div class="grid grid-cols-3 gap-4 justify-center">
 					<div class="skill">
 						<img src={C_Sharp} alt="C#" width="48" height="48" />
 						<p>C#</p>
@@ -170,6 +180,10 @@
 						<p>Go</p>
 					</div>
 					<div class="skill">
+						<img src={Dart} alt="Go" width="36" height="36" />
+						<p>Dart</p>
+					</div>
+					<div class="skill">
 						<img src={Java} alt="Java" width="64" height="48" />
 						<p>Java</p>
 					</div>
@@ -188,7 +202,7 @@
 				</div>
 			</div>
 		{:else if tabSet === 1}
-			<div data-section="frontend" class="section">
+			<div data-section="framework" class="section">
 				<div class="grid grid-cols-3 gap-4">
 					<div class="skill">
 						<img src={React} alt="React" width="48" height="48" />
@@ -197,6 +211,35 @@
 					<div class="skill">
 						<img src={Svelte} alt="Svelte" width="40" height="40" />
 						<p>Svelte</p>
+					</div>
+					<div class="skill">
+						<img src={NextJS} alt="Next JS" width="40" height="40" />
+						<p>Next.js</p>
+					</div>
+					<div class="skill">
+						<img src={Flutter} alt="Flutter" width="40" height="40" />
+						<p>Flutter</p>
+					</div>
+				</div>
+			</div>
+		{:else if tabSet === 2}
+			<div data-section="frontend" class="section">
+				<div class="grid grid-cols-3 gap-4">
+					<div class="skill">
+						<img src={JavaScript} alt="JavaScript" width="48" height="48" />
+						<p>JavaScript</p>
+					</div>
+					<div class="skill">
+						<img src={TypeScript} alt="TypeScript" width="48" height="48" />
+						<p>TypeScript</p>
+					</div>
+					<div class="skill">
+						<img src={JQuery} alt="JQuery" width="72" height="72" class="brighter-img" />
+						<p>JQuery</p>
+					</div>
+					<div class="skill">
+						<img src={NodeJS} alt="NodeJS" width="48" height="48" />
+						<p>NodeJS</p>
 					</div>
 					<div class="skill">
 						<img src={HTML5} alt="HTML5" width="64" height="64" />
@@ -221,27 +264,6 @@
 					<div class="skill">
 						<img src={MaterialUI} alt="MaterialUI" width="48" height="48" />
 						<p>MaterialUI</p>
-					</div>
-				</div>
-			</div>
-		{:else if tabSet === 2}
-			<div data-section="javascript" class="section">
-				<div class="grid grid-cols-3 gap-4">
-					<div class="skill">
-						<img src={JavaScript} alt="JavaScript" width="48" height="48" />
-						<p>JavaScript</p>
-					</div>
-					<div class="skill">
-						<img src={TypeScript} alt="TypeScript" width="48" height="48" />
-						<p>TypeScript</p>
-					</div>
-					<div class="skill">
-						<img src={JQuery} alt="JQuery" width="72" height="72" class="brighter-img" />
-						<p>JQuery</p>
-					</div>
-					<div class="skill">
-						<img src={NodeJS} alt="NodeJS" width="48" height="48" />
-						<p>NodeJS</p>
 					</div>
 				</div>
 			</div>
@@ -318,6 +340,10 @@
 						<img src={QuixelMixer} alt="QuixelMixer" width="40" height="40" />
 						<p>QuixelMixer</p>
 					</div>
+					<div class="skill">
+						<img src={Figma} alt="Figma" width="28" height="28" />
+						<p>Figma</p>
+					</div>
 				</div>
 			</div>
 		{:else if tabSet === 6}
@@ -346,6 +372,10 @@
 					<div class="skill">
 						<img src={Firebase} alt="Firebase" width="52" height="52" />
 						<p>Firebase</p>
+					</div>
+					<div class="skill">
+						<img src={Shopify} alt="Shopify" width="38" height="38" />
+						<p>Shopify</p>
 					</div>
 					<div class="skill">
 						<img src={WordPress} alt="WordPress" width="52" height="52" class="invert-img" />
