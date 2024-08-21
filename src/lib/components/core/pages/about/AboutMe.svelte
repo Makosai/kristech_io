@@ -55,7 +55,7 @@
 			</Card>
 			<Card>
 				<svelte:fragment slot="header">Lead Software Engineer</svelte:fragment>
-				<svelte:fragment slot="subheader">Alukos <br /> Apr 2019 - Present</svelte:fragment>
+				<svelte:fragment slot="subheader">Alukos <br /> Apr 2019 - Jan 2020</svelte:fragment>
 
 				<svelte:fragment slot="footer">
 					<span class="badge variant-filled">Node.js</span>
@@ -155,8 +155,8 @@
 		<Card>
 			<svelte:fragment slot="header">New Goals</svelte:fragment>
 			<p>
-				Now my primary focus is improving my skills in languages such as C++, Rust, and GoLang by working on some interesting projects.
-				Currently I'm working on VISP for Rust, Nyxy for C++, and Reia for Rust & GDScript. I'm also working on a few other projects. I'm
+				Now my primary focus is improving my skills in languages such as Zig, C++, Rust, and GoLang by working on some interesting projects.
+				Currently I'm working on VISP for Rust, Nyxy for C++, and Reia for Zig, C++, GoLang & GDScript. I'm also working on a few other projects. I'm
 				excited to see where these projects take me and what I can learn from them.
 			</p>
 		</Card>
@@ -168,15 +168,15 @@
 				<svelte:fragment slot="header">Reia & Sustenet</svelte:fragment>
 				<p>
 					For 2024, I'll be primarily working on <a href="https://www.playreia.com">Reia</a> an action adventure MMO that uses Godot's
-					GDScript and Rust. The website is made using SvelteKit. On the side I'll be working on
-					<a href="https://github.com/Quaint-Studios/Sustenet">Sustenet</a> that I'll reprogram from C# to C++ to be used with Reia.
+					GDScript and Zig through <a href="https://github.com/godot-zig/godot-zig">godot-zig</a>. The website is made using SvelteKit and will eventually use GoLang for the backend API. As well as a self-hosted Supabase instance for handling authentication and Turso's LibSQL for offline and online databases. On the side I'll be working on
+					<a href="https://github.com/Quaint-Studios/Sustenet">Sustenet</a> that was previously programmed in C#, was planned to be redone in C++, and is now happily being developed in Zig! You can still visit the C# version under the <a href="https://github.com/Quaint-Studios/Sustenet/tree/production-prep">production-prep branch</a>.
 				</p>
 			</Card>
 
 			<Card>
 				<svelte:fragment slot="header">VISP</svelte:fragment>
 				<p>
-					<a href="https://github.com/Makosai/VISP">VISP</a> (Video - Image - Sound - Post) with Rust & Dioxus. It's a multimedia editor that
+					<a href="https://github.com/Makosai/VISP">VISP</a> (Video - Image - Sound - Post) with Rust, GStreamer & Dioxus. It's a multimedia editor that
 					allows you to create and edit videos, images, and sound. As well as being a social media management tool that can schedule posts to
 					your favorite platforms like Instagram, TikTok, Twitter / X, Facebook, and YouTube!
 				</p>
